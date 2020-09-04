@@ -94,7 +94,7 @@ void ICACHE_FLASH_ATTR OS_Timer_SNTP_cb(void * arg)	// SNTP定时回调函数
 		{
 			str_date[index++] = '8';
 		}
-		else if (strcmp(tmp, "Sept") == 0)
+		else if (strcmp(tmp, "Sep") == 0)
 		{
 			str_date[index++] = '9';
 		}
