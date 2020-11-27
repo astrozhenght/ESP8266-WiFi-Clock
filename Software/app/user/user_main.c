@@ -175,6 +175,7 @@ void ICACHE_FLASH_ATTR OS_Timer_SNTP_cb(void * arg)	// SNTP定时回调函数
 		{
 			if(strcmp(_str_date, str_date))	//更新日期
 			{
+				LCD_Fill(40, 2, 148, 26, SKYBLUE);	// 清除显示日期
 				switch(strlen(str_date))	//获取长度，微调居中显示日期字符串
 				{
 				case 7:
