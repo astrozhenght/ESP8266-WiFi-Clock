@@ -146,7 +146,7 @@ void ICACHE_FLASH_ATTR LCD_Init(void)
 	delay_ms(100);
 	system_soft_wdt_feed();	//喂狗
 
-	LCD_BLK_Clr();		//拉低设置为常亮
+	LCD_BLK_Set();		//拉高设置为常亮
 	delay_ms(100);
 
 	LCD_WR_REG(0x11);	//Sleep exit 
